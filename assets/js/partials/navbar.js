@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     /*
     * Make the header images move on scroll
     */
-    window.addEventListener('scroll', function() {
-        var x = window.pageYOffset | document.body.scrollTop;
-        var m = document.getElementById("main"), c = m.style;
+    // window.addEventListener('scroll', function() {
+    //     // var x = window.pageYOffset | document.body.scrollTop;
+    //     // var m = document.getElementById("main"), c = m.style;
         
-        c.backgroundPosition = '100% ' + parseInt(-x/3) + 'px' + ', 0%, center top';
-    });
+    //     // c.backgroundPosition = '100% ' + parseInt(-x/3) + 'px' + ', 0%, center top';
+    // });
 });
