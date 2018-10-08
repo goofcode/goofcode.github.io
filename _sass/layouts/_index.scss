@@ -4,7 +4,7 @@
     display: inline-block;
     width: 100%;
     height: 100%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-align: center;
     color: $header-desc-text-color;
     background: $header-desc-background-color no-repeat;
@@ -12,7 +12,8 @@
 
     /* --- Responsive --- */
     @media screen and (max-width: 850px) {
-        background-size: 100% auto;
+        background-size: 130%;
+        font-size: 1.0em
     } 
     
     //For white images
@@ -87,6 +88,11 @@
     }
     .excerpt {
         margin-top: 1em;
+    }
+    .excerpt a{
+        font-size: 1.1em;
+        color: black;
+
     }
 }
 

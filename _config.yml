@@ -1,8 +1,8 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://goofcode.github.io"
-title: Goofcode # site's title
-description: "A website with blog posts and pages" # used by search engines
+title: Goofcode's Blog # site's title
+description: "Computer Engeering, Technical Translation" # used by search engines
 permalink: /:title
 
 # default settings
@@ -12,13 +12,14 @@ defaults:
       path: "_posts"
     values:
       layout: "post"
+      comments: "true"
 
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: Goofcode # blog's title
+  title: Goofcode's blog # blog's title
   avatar: assets/img/avatar.jpeg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
@@ -46,7 +47,7 @@ theme_settings:
   google_plus:
   instagram:
   keybase:
-  linkedin:  # Full URL
+  linkedin: https://www.linkedin.com/in/mookeun-ji-b35b2b16b/ # Full URL
   pinterest:
   reddit:
   soundcloud:
@@ -73,7 +74,7 @@ theme_settings:
 
   # Scripts / Features 
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  disqus_shortname: goofcode-github-io
   katex: true # Enable if using math markup
   
   special_page:
@@ -82,7 +83,7 @@ theme_settings:
       enabled: true
     tags:
       icon: "tags"
-      enabled: true
+      enabled: false
   
   # Localization strings
   str_follow_on: "Follow on"

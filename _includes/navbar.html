@@ -19,8 +19,21 @@
     
     <!-- Menu -->
     <ul class="hide">
+        <!-- Posts menu -->
+        <li class="nav-menu">
+            <a class="clear" href="/">
+                Posts
+            </a>
+        </li>
+        <!-- About menu -->
+        <li class="nav-menu">
+            <a class="clear" href="/about">
+                About
+            </a>
+        </li>
+        
         <!-- Auto Generation of NORMAL pages in the navbar -->
-        {% assign name_page = "" %}
+        <!-- {% assign name_page = "" %}
         
         {% for page in site.pages %}
             {% if page.title and page.hide != true %}
@@ -35,7 +48,7 @@
                 {% endif %}
                 {% assign name_page = page.title | append: name_page %}
             {% endif %}
-        {% endfor %} 
+        {% endfor %}  -->
         
         <!-- Auto Generation of SPECIAL pages in the navbar -->
         {% for item in site.theme_settings.special_page %}
