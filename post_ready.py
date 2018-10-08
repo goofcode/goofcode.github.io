@@ -36,8 +36,16 @@ for new_post in new_posts:
     with open(post_path, 'r') as f:
         post_file = f.read()
 
-    # TODO remove in-post title
-    # TODO remove in-post tags
+    # remove in-post title (assume H1 tag on the top of the file is containing title)
+    in_post_titles = re.findall("^# .*\n", post_file)
+    post_file = re.sub("^# .*\n", "", post_file)
+    print("[*] in-post title removed", in_post_titles)
+
+    # remove in-post tags and save tag
+    in_post_tags = re.findall("#\w+", post_file)
+    post_file = re.sub("#\w+", "", post_file)
+    in_post_tags = [tag.replace("#", "") for tag in in_post_tags]
+    print("[*] in-post tag removed", in_post_tags)
 
     # find all image tags
     img_tags = re.findall('!\[\]\(.*\)', post_file)
@@ -52,7 +60,8 @@ for new_post in new_posts:
     # generate jekyll "front matter"
     front_matter = '---\n' \
                    'title: {}\n' \
-                   '---\n'.format(post_title)
+                   'tags: [{}]\n' \
+                   '---\n'.format(post_title, ",".join(in_post_tags))
     post_file = front_matter + post_file
     print("[*] jekyll front matter generated")
 
