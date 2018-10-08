@@ -26,8 +26,11 @@ for new_post in new_posts:
     print("new post found: ", post_title)
 
     # move images to assets/img
-    post_img_path = shutil.move(os.path.join("_posts", post_title), image_path)
-    print("[*] image files moved to", post_img_path)
+    try:
+        post_img_path = shutil.move(os.path.join("_posts", post_title), image_path)
+        print("[*] image files moved to", post_img_path)
+    except FileNotFoundError:
+        print("[**] No image directory found: skip moving image")
 
     # read whole post file
     with open(post_path, 'r') as f:
