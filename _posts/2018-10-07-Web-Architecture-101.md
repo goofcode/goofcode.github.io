@@ -1,6 +1,6 @@
 ---
 title: Web Architecture 101
-category: 번역 
+tags: [블로그, 번역]
 ---
 
 웹 아키텍처 101 - 웹개발자를 시작할 때 알았다면 좋았을 기본 아키텍처
