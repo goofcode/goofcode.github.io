@@ -1,0 +1,4 @@
+# robotstxt.org
+User-agent: *
+Allow:/
+Sitemap: https://goofcode.github.io/sitemap.xml

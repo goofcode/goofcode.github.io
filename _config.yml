@@ -72,7 +72,7 @@ theme_settings:
     email: true
 
   # Scripts / Features 
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
+  google_analytics: UA-127194328-1 # Tracking ID, e.g. "UA-000000-01"
   disqus_shortname: goofcode-github-io
   katex: true # Enable if using math markup
   
@@ -125,6 +125,6 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: :compressed
-plugins: [jekyll-paginate, jekyll-seo-tag]
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap, jekyll-feed]
 #theme: type-on-strap # Uncomment if using the theme as a jekyll theme gem
 exclude: ["Gemfile", "Gemfile.lock", "type-on-strap.gemspec", "*.gem", "LICENSE", "README.md", "screenshot.png", "package.json", "node_modules", "gulpfile.js", ".idea/*"]
