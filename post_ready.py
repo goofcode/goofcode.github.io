@@ -65,7 +65,7 @@ for new_post in new_posts:
     front_matter = '---\n'
     front_matter += 'title: {}\n'.format(post_title)
     front_matter += ('thumbnail: {}\n'.format(post_thumbnail) if (post_thumbnail is not None) else '')
-    front_matter += ('tags: [{}]\n'.format(",".join(post_tags)) if (post_thumbnail is not None) else '')
+    front_matter += ('tags: [{}]\n'.format(",".join(post_tags)) if (post_tags is not None) else '')
     front_matter += '---\n'
     post_file = front_matter + post_file
     print("[*] jekyll front matter generated")
