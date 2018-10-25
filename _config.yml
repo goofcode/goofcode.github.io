@@ -3,7 +3,7 @@ baseurl: ""
 url: "https://goofcode.github.io"
 title: Goofcode's Blog # site's title
 description: "Computer Engeering, Technical Translation" # used by search engines
-permalink: /:slug-:year:month:day
+permalink: /:slug
 
 # default settings
 defaults:
