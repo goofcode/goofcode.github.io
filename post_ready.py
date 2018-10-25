@@ -22,10 +22,12 @@ for new_post in new_posts:
     post_filename = new_post
     post_path = os.path.join(posts_path, post_filename)
     post_title = post_filename.replace('.md', '')
+    print("new post found: ", post_title)
+
+    post_slug = input("please enter slug name for this post: ")
     post_thumbnail = None
     post_tags = None
 
-    print("new post found: ", post_title)
 
     # move images to assets/img
     try:
@@ -52,21 +54,23 @@ for new_post in new_posts:
     # find all image tags
     img_tags = re.findall('!\[\]\(.*\)', post_file)
 
-    # change image path
+    # change image path in image tag
     for idx, img_tag in enumerate(img_tags):
         new_path = os.path.join(image_path, img_tag[4:-1])
         new_tag = '![](/' + new_path + ')'
         post_file = post_file.replace(img_tag, new_tag)
+        # use first image as thumbnail
         if idx == 0:
             post_thumbnail = new_path
     print("[*] image path adjusted")
 
     # generate jekyll "front matter"
-    front_matter = '---\n'
-    front_matter += 'title: {}\n'.format(post_title)
-    front_matter += ('thumbnail: {}\n'.format(post_thumbnail) if (post_thumbnail is not None) else '')
-    front_matter += ('tags: [{}]\n'.format(",".join(post_tags)) if (post_tags is not None) else '')
-    front_matter += '---\n'
+    front_matter = '---\n' \
+                   'title: {}\n' \
+                   'slug: {}\n' \
+                   'thumbnail: {}\n' \
+                   'tags: [{}]\n' \
+                   '---\n'.format(post_title, post_slug, post_thumbnail, ",".join(post_tags))
     post_file = front_matter + post_file
     print("[*] jekyll front matter generated")
 

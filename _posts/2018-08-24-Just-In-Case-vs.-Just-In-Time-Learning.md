@@ -1,5 +1,6 @@
 ---
 title: Just-In-Case vs. Just-In-Time Learning
+slug: just in case vs just in time
 tags: [블로그, 번역]
 ---
 

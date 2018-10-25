@@ -1,5 +1,6 @@
 ---
 title: Web Architecture 101
+slug: web architecture 101
 tags: [블로그, 번역]
 ---
 

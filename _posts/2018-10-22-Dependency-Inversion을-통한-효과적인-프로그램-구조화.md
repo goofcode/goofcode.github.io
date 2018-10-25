@@ -1,5 +1,6 @@
 ---
 title: Dependency Inversion을 통한 효과적인 프로그램 구조화
+slug: dependency inversion
 tags: [블로그,번역,소프트웨어공학]
 ---
   

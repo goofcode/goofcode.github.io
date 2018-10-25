@@ -1,5 +1,6 @@
 ---
 title: ReactJS vs Angular5 vs Vue.js — 2018년에는 무엇을 사용해야 할까
+slug: react vs angular vs vue
 thumbnail: assets/img/ReactJS%20vs%20Angular5%20vs%20Vue.js%E2%80%8A%E2%80%94%E2%80%8A2018%E1%84%82%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%A6%E1%84%82%E1%85%B3%E1%86%AB%20%E1%84%86%E1%85%AE%E1%84%8B%E1%85%A5%E1%86%BA%E1%84%8B%E1%85%B3%E1%86%AF%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A2%E1%84%8B%E1%85%A3%20%E1%84%92%E1%85%A1%E1%86%AF%E1%84%81%E1%85%A1/87521561-69BF-4876-AEC5-3F63D131DB55.png
 tags: [블로그,번역]
 ---

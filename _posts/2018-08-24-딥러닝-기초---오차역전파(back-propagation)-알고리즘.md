@@ -1,5 +1,6 @@
 ---
 title: 딥러닝 기초 - 오차역전파(back propagation) 알고리즘
+slug: back propagation
 tags: [블로그,CS]
 ---
  

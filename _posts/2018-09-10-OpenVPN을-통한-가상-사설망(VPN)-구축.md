@@ -1,5 +1,6 @@
 ---
 title: OpenVPN을 통한 가상 사설망(VPN) 구축
+slug: openvpn vpn
 tags: [블로그, CS]
 ---
 
