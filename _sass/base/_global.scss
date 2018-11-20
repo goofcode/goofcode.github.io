@@ -151,7 +151,6 @@ a {
     text-decoration: none;
 }
 
-iframe,
 img,
 embed,
 object,
@@ -166,6 +165,11 @@ img[align=left] {
 
 img[align=right] {
     margin-left: 3%;
+}
+
+.adsense-container {
+    margin: 2em;  
+    text-align: center;
 }
 
 /* ---- Responsive ---- */
